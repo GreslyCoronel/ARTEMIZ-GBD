@@ -1,88 +1,47 @@
-.header {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f2f2;
+    height: 100vh;
+}
+/* Estilos del encabezado */
+header {
+    background: linear-gradient(90deg, #b511cb, #7ea7ee); /* Gradiente lineal */
+    padding: 15px;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: linear-gradient(90deg, #b511cb, #7ea7ee); /* Gradiente lineal */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-  
-.logo img {
-    height: 50px; 
-}
-  
-.search-bar {
-    display: flex;
-    align-items: center;
-    flex: 1; /* Ocupa el espacio disponible */
-    max-width: 500px; 
-    margin: 0 20px; 
-}
-  
-.search-bar input {
-    width: 100%;
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    font-size: 14px;
-    outline: none;
-}
-  
-.search-bar button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-left: -35px; /* Posiciona el ícono dentro del input */
-}
-  
-.search-bar button i {
-    font-size: 16px;
-    color: #555;
-}
-  
-  /* Contenedor de enlaces y logo de usuario */
-.nav-and-user {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Espacio entre enlaces y logo de usuario */
-}
-  
 
-.nav-links {
+nav ul {
+    list-style: none;
+    padding: 0;
     display: flex;
-    gap: 20px; /* Espacio entre enlaces */
 }
-  
-.nav-links a {
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    font-weight: 500;
-    font-weight:bold;
-}
-  
-.nav-links a:hover {
-    color: #f5f7f8; /* Cambia el color al pasar el ratón */
-}
-  
-/* Logo de inicio de sesión */
-.user-actions img {
-    height: 30px; 
-    cursor: pointer;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
-.h1{
-    color: #ac1c8c;
-}
+
 
 .container {
     background-color: #fff;
@@ -90,11 +49,16 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 350px; 
+    max-width: 350px;
     text-align: center;
 }
 
-/* Logo */
+/* Título */
+.h1 {
+    color: #ac1c8c;
+}
+
+/* Logo en el formulario */
 .logo img {
     width: 80px;
     height: 80px;
@@ -102,11 +66,16 @@ body {
     border-radius: 50%;
 }
 
-/* Campos de entrada (email y contraseña) */
+/* Campos de entrada */
 .email, .password {
     margin-bottom: 20px;
     text-align: left;
     color: #6e6969;
+}
+
+.email label, .password label {
+    display: block;
+    margin-bottom: 5px;
 }
 
 .email input, .password input {
@@ -115,9 +84,10 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 14px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
+/* Botón de inicio de sesión */
 .button {
     width: 100%;
     padding: 12px;
@@ -128,29 +98,29 @@ body {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.1s ease;
+    transition: background-color 0.3s ease;
 }
 
 .button:hover {
     background-color: #b64aaf;
 }
 
+/* Enlace de registro */
 .login-link {
-    margin-top: 15px; 
-    font-size: 14px; 
-    color: #777; 
-    text-align: center; 
+    margin-top: 15px;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
 }
 
 .login-link a {
-    color: #00ff22; 
-    text-decoration: none; 
-    font-weight: 600; 
+    color: #00ff22;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .login-link a:hover {
-    color: #0056b3; /* Cambiar color al pasar el ratón */
-    text-decoration: underline; /* Subrayar al pasar el ratón */
+    color: #0056b3;
+    text-decoration: underline;
     cursor: pointer;
 }
-

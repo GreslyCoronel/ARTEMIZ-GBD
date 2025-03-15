@@ -1,71 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Artemiz</title>
 </head>
-<header class="header">
-    <!-- Logo que redirige a la página principal -->
-    <div class="logo">
-      <a routerLink="/">
-        <img src="" alt="Artemiz-logo">
-      </a>
-    </div>
-  
-    <!-- Barra de búsqueda -->
-    <div class="search-bar">
-      <input type="text" placeholder="Buscar productos..." />
-      <button><i class="fas fa-search"></i></button>
-    </div>
-  
-    
-    <nav class="nav-links">
-      <a routerLink="">Cuadros</a>
-      <a routerLink="">Llaveros</a>
-      <a routerLink="">Conoce más</a>
-    </nav>
-  
-    
-    <div class="user-actions">
-      <a routerLink="">
-        <img src="" alt="login">
-      </a>
-    </div>
-</header>
 <body>
+    <header>
+        <nav>
+            <div class="logo">Artemiz</div>
+            <ul>
+                <li><a href="/home">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
     <form action="">
-        <div class="container">
-            <h1 class="h1">Registrate aqui!</h1>
-            <div class="logo">
-                <img src="" alt="">
-            </div>
-
-            <div class="name">
-                <input type="text" id="name" placeholder="Nombre">
-            </div>
-
-            <div class="LastName">
-                <input type="text" id="LastName" placeholder="Apellido">
-            </div>
-
-            <div class="email">
-                <input type="email" id="email" placeholder="Correo electronico">
-            </div>
-
-            <div class="password">
-                <input type="password" id="password" placeholder="Contraseña">
-            </div>
-
-            <div class="password-2">
-                <input type="password" id="password-2" placeholder="Confirmar Contraseña">
-            </div>
-
-            <button  class="button">Registrate</button>
-
-            <p class="login-link"><a href="frontend\src\app\login"></a>Ya tienes cuenta, ¡Ingresa aqui!</p>
-        </div>
+      <div class="container">
+          <h1 class="h1">Registrate aqui!</h1>
+          <div class="logo">
+              <img src="" alt="">
+          </div>
+    
+          <div class="name">
+              <input type="text" id="name" placeholder="Nombre">
+          </div>
+    
+          <div class="LastName">
+              <input type="text" id="LastName" placeholder="Apellido">
+          </div>
+    
+          <div class="email">
+              <input type="email" id="email" placeholder="Correo electronico">
+          </div>
+    
+          <div class="password">
+              <input type="password" id="password" placeholder="Contraseña">
+          </div>
+    
+          <div class="password-2">
+              <input type="password" id="password-2" placeholder="Confirmar Contraseña">
+          </div>
+    
+          <button  class="button">Registrate</button>
+    
+          <p class="login-link">Ya tienes cuenta, <a href="/login">¡Ingresa aqui!</a></p>
+      </div>
     </form>
+
 </body>
 </html>
 
