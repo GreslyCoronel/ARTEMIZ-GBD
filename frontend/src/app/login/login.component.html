@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<header class="header">
+    <!-- Logo que redirige a la página principal -->
+    <div class="logo">
+      <a routerLink="/">
+        <img src="assets/logo.png" alt="Logo de la empresa">
+      </a>
+    </div>
+  
+    <!-- Barra de búsqueda -->
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar productos..." />
+      <button><i class="fas fa-search"></i></button>
+    </div>
+  
+    <!-- Enlaces de navegación -->
+    <nav class="nav-links">
+      <a routerLink="/llaveros">Cuadros</a>
+      <a routerLink="/llaveros">Llaveros</a>
+      <a routerLink="/conoce-mas">Conoce más</a>
+    </nav>
+  
+    <!-- Logo de inicio de sesión -->
+    <div class="user-actions">
+      <a routerLink="/login">
+        <img src="assets/user-icon.png" alt="Iniciar sesión">
+      </a>
+    </div>
+  </header>
+<body>
+    <form action="">
+        <div class="container">
+            <h1 class="h1">Login</h1>
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <div class="email">
+                <label for="email">Correo electronico</label>
+                <input type="text" id="email">
+            </div>
+
+            <div class="password">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password">
+            </div>
+
+            <button  class="button">Iniciar sesión</button>
+
+            <p class="login-link"><a href="/frontend/src/app/registro/registro.component.html"></a>No tienes cuenta, ¡Registrate aqui!</p>
+        </div>
+    </form>
+</body>
+</html>
