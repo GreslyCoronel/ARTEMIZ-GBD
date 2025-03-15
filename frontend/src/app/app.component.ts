@@ -7,8 +7,7 @@ import { RegistroComponent } from './registro/registro.component';
   selector: 'app-root',
   imports: [
     RouterOutlet, 
-    LoginComponent, 
-    RegistroComponent
+
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
