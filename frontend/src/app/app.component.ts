@@ -5,7 +5,11 @@ import { RegistroComponent } from './registro/registro.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LoginComponent, RegistroComponent],
+  imports: [
+    RouterOutlet, 
+    LoginComponent, 
+    RegistroComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 

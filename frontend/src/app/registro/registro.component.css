@@ -109,7 +109,7 @@ body {
     color: #6e6969;
 }
 
-.email input, .password input {
+.name input, .LastName input, .email input, .password input, .password-2 input{
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
